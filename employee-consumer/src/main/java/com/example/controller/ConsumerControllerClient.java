@@ -22,18 +22,17 @@ public class ConsumerControllerClient {
 
     public void getEmployee() throws RestClientException, IOException {
 
-        List<ServiceInstance> instances=discoveryClient.getInstances("employee-producer");
+        List<ServiceInstance> instances=discoveryClient.getInstances("employee-zuul-service");
         ServiceInstance serviceInstance=instances.get(0);
 
         String baseUrl=serviceInstance.getUri().toString();
 
-        baseUrl=baseUrl+"/employee";
+        baseUrl=baseUrl+"/producer/employee";
 
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> response=null;
         try{
-            response=restTemplate.exchange(baseUrl,
-                    HttpMethod.GET, getHeaders(),String.class);
+            response=restTemplate.exchange(baseUrl,HttpMethod.GET, getHeaders(),String.class);
         }catch (Exception ex)
         {
             System.out.println(ex);
