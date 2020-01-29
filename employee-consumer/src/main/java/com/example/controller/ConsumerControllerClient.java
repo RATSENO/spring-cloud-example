@@ -27,6 +27,8 @@ public class ConsumerControllerClient {
 
         String baseUrl=serviceInstance.getUri().toString();
 
+        System.out.println("service-instance-uri:"+baseUrl);
+
         baseUrl=baseUrl+"/employee";
 
         RestTemplate restTemplate = new RestTemplate();
