@@ -17,4 +17,6 @@ zuul 추가 적용 예정
 ## 참고 링크
 > LINK : https://www.javainuse.com/spring/spring_eurekaregister  
 
-> LINK : https://github.com/RATSENO/TIL/blob/master/company-project/me.md
+> LINK : https://github.com/RATSENO/TIL/blob/master/company-project/me.md  
+
+> LINK : https://github.com/cheese10yun/IntelliJ/blob/master/spring/run-config.md
