@@ -23,6 +23,8 @@ public class PreFilter extends ZuulFilter {
 
     @Override
     public Object run() {
+        System.out.println("Using Pre Filter");
+
         RequestContext requestContext = RequestContext.getCurrentContext();
         HttpServletRequest httpServletRequest = requestContext.getRequest();
 
