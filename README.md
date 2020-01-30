@@ -2,8 +2,7 @@
 * employee-consumer  
 * employee-producer  
 * eureka-server  
-2020-01-21 기준 eureka 적용
-zuul 추가 적용 예정  
+* employee-zuul-service
 
 -----------------------------------------------
 ## branch  
